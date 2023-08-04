@@ -1,0 +1,22 @@
+body{
+    background-color: rgba(235, 235, 235, 1);
+}
+
+.wrapper{
+    width: 1920px;
+    height: 8660px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+@import './blocks/blocks';
+
+
+@media screen and (max-width: 360px) {
+
+    .wrapper{
+        width: 360px;
+        height: 9839px;
+    }
+    
+}
