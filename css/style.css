@@ -1,12 +1,104 @@
-body {
-  background-color: rgb(235, 235, 235);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.wrapper {
-  width: 1920px;
-  height: 8660px;
-  margin: 0 auto;
-  background-color: white;
+body {
+  background-image: url(../images/images/background-image.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: Montserrat;
+}
+
+body .webkam {
+  margin-top: 120px;
+  text-align: center;
+}
+
+body .webkam .text_1 {
+  color: #2F327D;
+}
+
+body .webkam span {
+  color: #FC377E;
+}
+
+body .webkam .text_2 {
+  margin-top: 20px;
+  color: #5B5B87;
+}
+
+.cards {
+
+  display: flex;
+}
+
+.cards .card {
+  padding: 30px;
+}
+
+.cards .card img {
+  width: 440px;
+  height: 440px;
+}
+
+.second-card {
+  display: flex;
+}
+
+.second-card .first {
+  padding: 125px;
+  margin-top: -350px;
+  margin-left: 160px;
+}
+
+.second-card .second {
+  margin-top: -220px;
+  margin-left: -70px;
+}
+
+.second-card .first img {
+  width: 440px;
+  height: 440px;
+}
+
+.second-card .second img {
+  width: 440px;
+  height: 440px;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background-image: none;
+    background-color: #ffcce5;
+  }
+
+  body .cards {
+    margin-left: -50px;
+    display: block;
+  }
+
+  .first img {
+    width: 100%;
+  }
+
+  .second-card {
+    display: block;
+  }
+
+  .second-card .first {
+    margin-top: -100px;
+    margin-left: -145px;
+  }
+
+  .second-card .second {
+    margin-top: 0px;
+    margin-left: -20px;
+  }
 }
 
 @media screen and (max-width: 360px) {

@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background-image: url(../images/background-image.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: Montserrat;
+
+  .webkam {
+    margin-top: 120px;
+    text-align: center;
+
+    .text_1 {
+      color: #2F327D;
+    }
+
+    span {
+      color: #FC377E;
+    }
+
+    .text_2 {
+      margin-top: 20px;
+      color: #5B5B87;
+    }
+  }
+
+}
+
+.cards {
+  margin-left: 90px;
+  display: flex;
+
+  .card {
+    padding: 30px;
+  }
+
+  .card img {
+
+    width: 440px;
+    height: 440px;
+  }
+}
+
+.second-card {
+  margin-left: 90px;
+  display: flex;
+
+  .first {
+    padding: 125px;
+    margin-top: -350px;
+    margin-left: 160px;
+  }
+
+  .second {
+    margin-top: -220px;
+    margin-left: -70px;
+  }
+
+  .first img {
+    width: 440px;
+    height: 440px;
+  }
+
+  .second img {
+    width: 440px;
+    height: 440px;
+  }
+}
+
+// responsive
+
+@media screen and (max-width: 400px) {
+  body {
+    background-image: none;
+    background-color: #ffcce5;
+
+    .cards {
+      margin-left: -50px;
+      display: block;
+    }
+  }
+
+  .first img {
+    width: 100%;
+  }
+
+  .second-card {
+    display: block;
+
+    .first {
+      margin-top: -100px;
+      margin-left: -235px;
+    }
+
+    .second {
+      margin-top: 0px;
+      margin-left: -115px;
+    }
+  }
+}
